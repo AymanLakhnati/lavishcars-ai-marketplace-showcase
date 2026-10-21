@@ -1,0 +1,160 @@
+WEBVTT
+
+00:00:00.500 --> 00:00:06.506
+After the LavishCars technical assessment, Ayman Lakhnati developed this independent, AI-assisted
+
+00:00:06.506 --> 00:00:13.059
+marketplace concept. The objective is practical: help suppliers publish approved offers, help
+
+00:00:13.059 --> 00:00:19.611
+customers discover suitable vehicles, and turn interest into structured inquiries. This walkthrough
+
+00:00:19.611 --> 00:00:26.164
+combines verified prototype screens with fresh API demonstrations. All suppliers, vehicles and
+
+00:00:26.164 --> 00:00:33.808
+prices are synthetic. It is a listings marketplace, with no payment or confirmed reservation.
+
+00:00:35.008 --> 00:00:43.292
+The showcase begins with a simple request: a luxury SUV in Dubai, for four days, below one thousand
+
+00:00:43.292 --> 00:00:48.815
+dirhams per day. The concierge extracts supported constraints, queries approved inventory, and
+
+00:00:48.815 --> 00:00:56.639
+returns up to three real database records with prices and explanations. It can ask for a missing
+
+00:00:56.639 --> 00:01:01.702
+destination while preserving earlier budget and passenger details. The database remains
+
+00:01:01.702 --> 00:01:06.764
+authoritative for price, supplier eligibility and visibility. The no-key interpretation is
+
+00:01:06.764 --> 00:01:12.287
+deterministic, so the demonstration works without a paid model. An optional external-provider
+
+00:01:12.287 --> 00:01:17.810
+adapter is implemented, but a real model call has not been verified.
+
+00:01:19.010 --> 00:01:24.832
+The preference service makes the ranking explicit. Destination, budget, passenger capacity and
+
+00:01:24.832 --> 00:01:31.139
+required features constrain the eligible offers. A preferred category adds twenty ranking points,
+
+00:01:31.139 --> 00:01:38.902
+and an editorial occasion match adds ten. Ties use daily price, then listing identity. These are
+
+00:01:38.902 --> 00:01:44.725
+transparent rules, not invented match percentages or machine-learning accuracy claims. The customer
+
+00:01:44.725 --> 00:01:52.973
+can inspect the same vehicle record and request a quote. An inquiry is saved with its responsible
+
+00:01:52.973 --> 00:01:59.766
+listing, supplier and location before any notification attempt. It remains an inquiry, never a
+
+00:01:59.766 --> 00:02:00.736
+booking guarantee.
+
+00:02:01.936 --> 00:02:08.645
+For suppliers, the listing assistant turns rough vehicle notes into suggested fields, a concise
+
+00:02:08.645 --> 00:02:13.916
+description and completeness warnings. It recognizes existing catalog references and explicitly
+
+00:02:13.916 --> 00:02:20.145
+supplied facts. Unknown specifications remain for review. Suggestions must be previewed and applied
+
+00:02:20.145 --> 00:02:28.292
+to an editable draft. Applying them does not save, submit or publish a vehicle. The supplier still
+
+00:02:28.292 --> 00:02:35.000
+checks the details, uploads permitted images, saves the offer and submits it for administrator
+
+00:02:35.000 --> 00:02:41.230
+review. Supplier identity comes from authentication, and private listings and inquiries are scoped
+
+00:02:41.230 --> 00:02:42.668
+to that supplier.
+
+00:02:43.868 --> 00:02:51.290
+Administrator approval is a real boundary in the backend. A published offer also requires an
+
+00:02:51.290 --> 00:02:58.218
+approved, active supplier, an enabled market and no administrative hide. The same eligibility rule
+
+00:02:58.218 --> 00:03:03.661
+protects public search, vehicle details, recommendations and new inquiries. Supplier suspension
+
+00:03:03.661 --> 00:03:09.599
+removes public visibility without deleting business records. Material listing edits require renewed
+
+00:03:09.599 --> 00:03:16.526
+review. Customer inquiries are stored as structured CRM records, with controlled status updates. A
+
+00:03:16.526 --> 00:03:23.454
+notification failure cannot erase the saved request because the inquiry and outbox event commit
+
+00:03:23.454 --> 00:03:23.949
+together.
+
+00:03:25.149 --> 00:03:31.600
+The insights service summarizes actual account data: listing states, inquiry states, category
+
+00:03:31.600 --> 00:03:38.590
+interest and the most-viewed vehicle details. View metrics count detail API requests, including
+
+00:03:38.590 --> 00:03:44.504
+repeats and automated demonstrations. They are descriptive measures, not unique-customer conversion
+
+00:03:44.504 --> 00:03:50.955
+or demand forecasts. Photo assistance checks resolution, brightness and edge detail, detects
+
+00:03:50.955 --> 00:03:57.407
+identical normalized uploads, and provides a documented cover-candidate score. These local image
+
+00:03:57.407 --> 00:04:04.934
+heuristics support supplier review. They do not verify that a photograph contains a vehicle,
+
+00:04:04.934 --> 00:04:08.160
+establish ownership, or infer exact specifications.
+
+00:04:09.360 --> 00:04:15.143
+The architecture respects LavishCars' existing WordPress investment. WordPress remains the intended
+
+00:04:15.143 --> 00:04:21.977
+marketing, content and SEO layer. Fast API and PostgreSQL own suppliers, normalized memberships,
+
+00:04:21.977 --> 00:04:29.862
+service areas, offers, approvals and inquiries. Next J S demonstrates the storefront and portals. A
+
+00:04:29.862 --> 00:04:36.696
+local WordPress bridge has been tested for catalog rendering and supplier suspension visibility.
+
+00:04:36.696 --> 00:04:42.479
+Verification includes twenty-two backend tests, four main browser scenarios, seven extended
+
+00:04:42.479 --> 00:04:49.839
+interface checks and five proxy checks. The build and lint pass locally. Remote continuous
+
+00:04:49.839 --> 00:04:57.724
+integration has a startup failure, and public deployment is still blocked by the hosting account
+
+00:04:57.724 --> 00:04:58.250
+setup.
+
+00:04:59.450 --> 00:05:05.721
+The result is a reviewable demonstration of the complete supplier-to-inquiry workflow, with grounded
+
+00:05:05.721 --> 00:05:12.476
+assistance where it helps. The repository includes the architecture, requirement audit, tests and an
+
+00:05:12.476 --> 00:05:18.747
+explicit production roadmap. The next conversation is about scope, trade-offs and how this
+
+00:05:18.747 --> 00:05:25.019
+foundation should fit LavishCars' priorities. This is an unofficial concept developed with AI
+
+00:05:25.019 --> 00:05:27.914
+assistance. The voice narration is synthetic.

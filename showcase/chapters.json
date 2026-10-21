@@ -1,0 +1,86 @@
+[
+  {
+    "id": "01-introduction",
+    "title": "A marketplace built around trust",
+    "start": 0.0,
+    "duration": 34.508,
+    "shots": [
+      "01-introduction-1.png",
+      "01-introduction-2.png"
+    ]
+  },
+  {
+    "id": "02-concierge",
+    "title": "Describe the trip. Discover the drive.",
+    "start": 34.508,
+    "duration": 44.001,
+    "shots": [
+      "02-concierge-1.png",
+      "02-concierge-2.png",
+      "02-concierge-3.png"
+    ]
+  },
+  {
+    "id": "03-preferences",
+    "title": "A shortlist with reasons, not guesses",
+    "start": 78.51,
+    "duration": 42.926,
+    "shots": [
+      "03-preferences-1.png",
+      "03-preferences-2.png"
+    ]
+  },
+  {
+    "id": "04-supplier",
+    "title": "From rough notes to a reviewable offer",
+    "start": 121.436,
+    "duration": 41.932,
+    "shots": [
+      "04-supplier-1.png",
+      "04-supplier-2.png",
+      "04-supplier-3.png"
+    ]
+  },
+  {
+    "id": "05-approval",
+    "title": "Publication is a business rule",
+    "start": 163.368,
+    "duration": 41.281,
+    "shots": [
+      "05-approval-1.png",
+      "05-approval-2.png"
+    ]
+  },
+  {
+    "id": "06-insights",
+    "title": "Useful intelligence, backed by evidence",
+    "start": 204.649,
+    "duration": 44.211,
+    "shots": [
+      "06-insights-1.png",
+      "06-insights-2.png",
+      "06-insights-3.png"
+    ]
+  },
+  {
+    "id": "07-architecture",
+    "title": "Respect WordPress. Separate the authority.",
+    "start": 248.86,
+    "duration": 50.09,
+    "shots": [
+      "07-architecture-1.png",
+      "07-architecture-2.png",
+      "07-architecture-3.png"
+    ]
+  },
+  {
+    "id": "08-closing",
+    "title": "Business understanding. Working evidence.",
+    "start": 298.95,
+    "duration": 29.664,
+    "shots": [
+      "08-closing-1.png",
+      "08-closing-2.png"
+    ]
+  }
+]

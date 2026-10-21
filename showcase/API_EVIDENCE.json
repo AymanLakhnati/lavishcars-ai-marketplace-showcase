@@ -1,0 +1,478 @@
+{
+  "captured_at": "2026-10-21T04:08:53.479761+00:00",
+  "environment": "Local PostgreSQL/FastAPI synthetic demo",
+  "checks": [
+    "Three concierge recommendations resolve to eligible database records",
+    "Explicit preference ranking returns hard-constraint matches",
+    "Supplier assistant extracts a reviewable structured draft",
+    "Photo heuristics flag dark/low-resolution input and repeat upload",
+    "New listing is private before approval, public after approval, and its inquiry reaches the supplier inbox",
+    "Supplier insights read actual scoped records and request events",
+    "Showcase listing archived after verification; no real booking or message"
+  ],
+  "concierge": {
+    "request": "I'm in Dubai for four days, looking for a luxury SUV under AED 1,000 per day.",
+    "filters": {
+      "city": "Dubai",
+      "currency": "AED",
+      "max_price": 1000.0,
+      "budget_exclusive": true,
+      "duration_days": 4,
+      "category": "SUV"
+    },
+    "recommendations": [
+      {
+        "listing": {
+          "id": 3,
+          "slug": "cadillac-escalade-dubai-3",
+          "title": "Cadillac Escalade",
+          "brand": "Cadillac",
+          "model": "Escalade",
+          "year": 2026,
+          "city": "Dubai",
+          "country": "UAE",
+          "category": "SUV",
+          "categories": [
+            "SUV"
+          ],
+          "images": [],
+          "supplier_name": "Desert Atelier Motors \u00b7 Demo",
+          "currency": "AED",
+          "seats": 7,
+          "transmission": "Automatic",
+          "description": "A considered choice for your next journey. This Cadillac Escalade is synthetic demonstration inventory; request a quote to confirm dates, final pricing and rental terms.",
+          "features": [
+            "Bluetooth",
+            "Climate control",
+            "Leather interior",
+            "Navigation"
+          ],
+          "status": "published",
+          "rejection_reason": "",
+          "mileage": 250,
+          "admin_hidden": false,
+          "trim": "",
+          "vehicle_type": "SUV",
+          "daily_price": 850.0,
+          "weekly_price": 5100.0,
+          "monthly_price": 19550.0,
+          "deposit": 1700.0
+        },
+        "match_reasons": [
+          "Listed in Dubai",
+          "AED 850/day within your daily budget",
+          "7 seats \u00b7 SUV"
+        ]
+      },
+      {
+        "listing": {
+          "id": 1,
+          "slug": "land-rover-range-rover-sport-dubai-1",
+          "title": "Land Rover Range Rover Sport",
+          "brand": "Land Rover",
+          "model": "Range Rover Sport",
+          "year": 2026,
+          "city": "Dubai",
+          "country": "UAE",
+          "category": "SUV",
+          "categories": [
+            "SUV"
+          ],
+          "images": [],
+          "supplier_name": "Desert Atelier Motors \u00b7 Demo",
+          "currency": "AED",
+          "seats": 5,
+          "transmission": "Automatic",
+          "description": "A considered choice for your next journey. This Land Rover Range Rover Sport is synthetic demonstration inventory; request a quote to confirm dates, final pricing and rental terms.",
+          "features": [
+            "Bluetooth",
+            "Climate control",
+            "Leather interior",
+            "Navigation"
+          ],
+          "status": "published",
+          "rejection_reason": "",
+          "mileage": 250,
+          "admin_hidden": false,
+          "trim": "",
+          "vehicle_type": "SUV",
+          "daily_price": 900.0,
+          "weekly_price": 5400.0,
+          "monthly_price": 20700.0,
+          "deposit": 1800.0
+        },
+        "match_reasons": [
+          "Listed in Dubai",
+          "AED 900/day within your daily budget",
+          "5 seats \u00b7 SUV"
+        ]
+      },
+      {
+        "listing": {
+          "id": 2,
+          "slug": "mercedes-benz-g-class-dubai-2",
+          "title": "Mercedes-Benz G-Class",
+          "brand": "Mercedes-Benz",
+          "model": "G-Class",
+          "year": 2026,
+          "city": "Dubai",
+          "country": "UAE",
+          "category": "SUV",
+          "categories": [
+            "SUV"
+          ],
+          "images": [],
+          "supplier_name": "Desert Atelier Motors \u00b7 Demo",
+          "currency": "AED",
+          "seats": 5,
+          "transmission": "Automatic",
+          "description": "A considered choice for your next journey. This Mercedes-Benz G-Class is synthetic demonstration inventory; request a quote to confirm dates, final pricing and rental terms.",
+          "features": [
+            "Bluetooth",
+            "Climate control",
+            "Leather interior",
+            "Navigation"
+          ],
+          "status": "published",
+          "rejection_reason": "",
+          "mileage": 250,
+          "admin_hidden": false,
+          "trim": "",
+          "vehicle_type": "SUV",
+          "daily_price": 990.0,
+          "weekly_price": 5940.0,
+          "monthly_price": 22770.0,
+          "deposit": 1980.0
+        },
+        "match_reasons": [
+          "Listed in Dubai",
+          "AED 990/day within your daily budget",
+          "5 seats \u00b7 SUV"
+        ]
+      }
+    ],
+    "mode": "deterministic",
+    "needs_clarification": false,
+    "message": "I found 3 matching vehicles in Dubai. Location, category, budget and passenger count are matched when recognized. Dates and special requests need supplier confirmation. These illustrative rates do not confirm availability."
+  },
+  "preferences": {
+    "filters": {
+      "city": "Dubai",
+      "currency": null,
+      "category": null,
+      "max_price": "1000",
+      "min_seats": 5,
+      "features": [],
+      "preferred_categories": [
+        "SUV"
+      ],
+      "occasion": "family"
+    },
+    "recommendations": [
+      {
+        "listing": {
+          "id": 3,
+          "slug": "cadillac-escalade-dubai-3",
+          "title": "Cadillac Escalade",
+          "brand": "Cadillac",
+          "model": "Escalade",
+          "year": 2026,
+          "city": "Dubai",
+          "country": "UAE",
+          "category": "SUV",
+          "categories": [
+            "SUV"
+          ],
+          "images": [],
+          "supplier_name": "Desert Atelier Motors \u00b7 Demo",
+          "currency": "AED",
+          "seats": 7,
+          "transmission": "Automatic",
+          "description": "A considered choice for your next journey. This Cadillac Escalade is synthetic demonstration inventory; request a quote to confirm dates, final pricing and rental terms.",
+          "features": [
+            "Bluetooth",
+            "Climate control",
+            "Leather interior",
+            "Navigation"
+          ],
+          "status": "published",
+          "rejection_reason": "",
+          "mileage": 250,
+          "admin_hidden": false,
+          "trim": "",
+          "vehicle_type": "SUV",
+          "daily_price": 850.0,
+          "weekly_price": 5100.0,
+          "monthly_price": 19550.0,
+          "deposit": 1700.0
+        },
+        "match_reasons": [
+          "Listed in Dubai",
+          "AED 850/day",
+          "7 seats",
+          "Preferred category: +20 ranking points",
+          "Category suited to family by our stated editorial rule: +10 points"
+        ],
+        "score": 30
+      },
+      {
+        "listing": {
+          "id": 1,
+          "slug": "land-rover-range-rover-sport-dubai-1",
+          "title": "Land Rover Range Rover Sport",
+          "brand": "Land Rover",
+          "model": "Range Rover Sport",
+          "year": 2026,
+          "city": "Dubai",
+          "country": "UAE",
+          "category": "SUV",
+          "categories": [
+            "SUV"
+          ],
+          "images": [],
+          "supplier_name": "Desert Atelier Motors \u00b7 Demo",
+          "currency": "AED",
+          "seats": 5,
+          "transmission": "Automatic",
+          "description": "A considered choice for your next journey. This Land Rover Range Rover Sport is synthetic demonstration inventory; request a quote to confirm dates, final pricing and rental terms.",
+          "features": [
+            "Bluetooth",
+            "Climate control",
+            "Leather interior",
+            "Navigation"
+          ],
+          "status": "published",
+          "rejection_reason": "",
+          "mileage": 250,
+          "admin_hidden": false,
+          "trim": "",
+          "vehicle_type": "SUV",
+          "daily_price": 900.0,
+          "weekly_price": 5400.0,
+          "monthly_price": 20700.0,
+          "deposit": 1800.0
+        },
+        "match_reasons": [
+          "Listed in Dubai",
+          "AED 900/day",
+          "5 seats",
+          "Preferred category: +20 ranking points",
+          "Category suited to family by our stated editorial rule: +10 points"
+        ],
+        "score": 30
+      },
+      {
+        "listing": {
+          "id": 2,
+          "slug": "mercedes-benz-g-class-dubai-2",
+          "title": "Mercedes-Benz G-Class",
+          "brand": "Mercedes-Benz",
+          "model": "G-Class",
+          "year": 2026,
+          "city": "Dubai",
+          "country": "UAE",
+          "category": "SUV",
+          "categories": [
+            "SUV"
+          ],
+          "images": [],
+          "supplier_name": "Desert Atelier Motors \u00b7 Demo",
+          "currency": "AED",
+          "seats": 5,
+          "transmission": "Automatic",
+          "description": "A considered choice for your next journey. This Mercedes-Benz G-Class is synthetic demonstration inventory; request a quote to confirm dates, final pricing and rental terms.",
+          "features": [
+            "Bluetooth",
+            "Climate control",
+            "Leather interior",
+            "Navigation"
+          ],
+          "status": "published",
+          "rejection_reason": "",
+          "mileage": 250,
+          "admin_hidden": false,
+          "trim": "",
+          "vehicle_type": "SUV",
+          "daily_price": 990.0,
+          "weekly_price": 5940.0,
+          "monthly_price": 22770.0,
+          "deposit": 1980.0
+        },
+        "match_reasons": [
+          "Listed in Dubai",
+          "AED 990/day",
+          "5 seats",
+          "Preferred category: +20 ranking points",
+          "Category suited to family by our stated editorial rule: +10 points"
+        ],
+        "score": 30
+      }
+    ],
+    "mode": "deterministic",
+    "needs_clarification": false,
+    "message": "Database-grounded suggestions. Hard constraints are never relaxed. Preferred category adds 20 points; occasion-category fit adds 10. Ties use lower daily price, then listing ID. The lowest-priced 500 eligible candidates are considered. Supplier confirmation is required for dates and final terms."
+  },
+  "assistant": {
+    "suggestions": {
+      "brand": "Land Rover",
+      "model": "Range Rover Sport",
+      "year": 2026,
+      "city": "Dubai",
+      "country": "UAE",
+      "currency": "AED",
+      "daily_price": 925.0,
+      "seats": 5,
+      "transmission": "Automatic",
+      "category": "SUV",
+      "features": [
+        "Panoramic roof"
+      ],
+      "description": "2026 Land Rover Range Rover Sport in Dubai. Listed features: Panoramic roof. Contact the supplier to confirm rental terms and availability."
+    },
+    "missing_fields": [],
+    "warnings": [
+      "Review every suggestion. Only explicitly recognized details are filled; no technical specifications are inferred.",
+      "Upload actual vehicle photos before submitting for review."
+    ],
+    "mode": "deterministic"
+  },
+  "photo_quality": {
+    "first": {
+      "mode": "local-image-heuristics",
+      "width": 160,
+      "height": 100,
+      "brightness": 15.0,
+      "edge_variance": 0.0,
+      "cover_candidate_score": 3,
+      "score_explanation": "Resolution contributes up to 40, balanced brightness 30, edge detail 30. This compares photo quality only; it does not verify a vehicle.",
+      "warnings": [
+        "Low resolution: use a photo at least 400 pixels on each side.",
+        "This image is very dark. Check whether vehicle details are visible.",
+        "Low edge detail: this may be a blurred or very plain image. Review it yourself.",
+        "Exact duplicate of an image already uploaded by your supplier account."
+      ],
+      "duplicate_of": "/uploads/1/d3716c33cce4efe92af5d0c7b2cbd2c24e1f80a2.webp"
+    },
+    "repeat": {
+      "mode": "local-image-heuristics",
+      "width": 160,
+      "height": 100,
+      "brightness": 15.0,
+      "edge_variance": 0.0,
+      "cover_candidate_score": 3,
+      "score_explanation": "Resolution contributes up to 40, balanced brightness 30, edge detail 30. This compares photo quality only; it does not verify a vehicle.",
+      "warnings": [
+        "Low resolution: use a photo at least 400 pixels on each side.",
+        "This image is very dark. Check whether vehicle details are visible.",
+        "Low edge detail: this may be a blurred or very plain image. Review it yourself.",
+        "Exact duplicate of an image already uploaded by your supplier account."
+      ],
+      "duplicate_of": "/uploads/1/d3716c33cce4efe92af5d0c7b2cbd2c24e1f80a2.webp"
+    },
+    "input": "Synthetic dark test pattern, not a vehicle photograph"
+  },
+  "workflow": {
+    "listing_id": 25,
+    "slug": "land-rover-range-rover-sport-dubai-6f17fd2a",
+    "draft": "draft",
+    "submitted": "pending",
+    "before_approval_http": 404,
+    "approved": "published",
+    "public_record_id": 25,
+    "saved_inquiry_id": 14,
+    "supplier_inbox_verified": true,
+    "notification_policy": "Stored in outbox; no real supplier notification sent"
+  },
+  "insights": {
+    "listings_by_status": {
+      "archived": 10,
+      "paused": 1,
+      "pending": 1,
+      "published": 8,
+      "rejected": 1
+    },
+    "leads_by_status": {
+      "new": 14
+    },
+    "totals": {
+      "listings": 21,
+      "leads": 14
+    },
+    "leads_by_category": {
+      "SUV": 14
+    },
+    "top_listings": [
+      {
+        "listing_id": 17,
+        "title": "Land Rover Range Rover Sport",
+        "inquiries": 3,
+        "detail_requests": 0,
+        "inquiries_per_100_detail_requests": null
+      },
+      {
+        "listing_id": 20,
+        "title": "Land Rover Range Rover Sport",
+        "inquiries": 3,
+        "detail_requests": 5,
+        "inquiries_per_100_detail_requests": 60.0
+      },
+      {
+        "listing_id": 3,
+        "title": "Cadillac Escalade",
+        "inquiries": 2,
+        "detail_requests": 5,
+        "inquiries_per_100_detail_requests": 40.0
+      },
+      {
+        "listing_id": 19,
+        "title": "Land Rover Range Rover Sport",
+        "inquiries": 1,
+        "detail_requests": 0,
+        "inquiries_per_100_detail_requests": null
+      },
+      {
+        "listing_id": 21,
+        "title": "Land Rover Range Rover Sport",
+        "inquiries": 1,
+        "detail_requests": 0,
+        "inquiries_per_100_detail_requests": null
+      }
+    ],
+    "most_viewed": [
+      {
+        "listing_id": 1,
+        "title": "Land Rover Range Rover Sport",
+        "detail_requests": 5
+      },
+      {
+        "listing_id": 3,
+        "title": "Cadillac Escalade",
+        "detail_requests": 5
+      },
+      {
+        "listing_id": 20,
+        "title": "Land Rover Range Rover Sport",
+        "detail_requests": 5
+      },
+      {
+        "listing_id": 2,
+        "title": "Mercedes-Benz G-Class",
+        "detail_requests": 2
+      },
+      {
+        "listing_id": 22,
+        "title": "Land Rover Range Rover Sport",
+        "detail_requests": 1
+      }
+    ],
+    "view_definition": "Detail API requests, including repeated, automated and demonstration requests; not unique visitors or confirmed bookings.",
+    "summaries": [
+      "21 listings and 14 recorded inquiries in this account scope.",
+      "8 listings have published status; supplier eligibility and administrator visibility still apply.",
+      "14 inquiries await an initial status update.",
+      "SUV has 14 recorded inquiries, the highest category count (ties may exist)."
+    ],
+    "scope": "supplier",
+    "mode": "database-aggregates"
+  }
+}
