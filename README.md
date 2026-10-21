@@ -2,16 +2,15 @@
 
 **Independent concept by Ayman Lakhnati. AI-assisted development. Synthetic data.**
 
-Start with `REVIEW_START_HERE.md` and the narrated demonstration supplied separately. This repository demonstrates a Type A listings marketplace:
+**[Review website and film](https://lavishcars-ayman-showcase.jocund-larch-4775.chatgpt.site)** · **[Public source](https://github.com/AymanLakhnati/lavishcars-ai-marketplace-showcase)**
+
+[![Watch the product walkthrough](showcase/poster.jpg)](https://lavishcars-ayman-showcase.jocund-larch-4775.chatgpt.site/#walkthrough)
+
+Start with `REVIEW_START_HERE.md` and `showcase/SHOWCASE_ROADMAP.md`. This repository demonstrates a Type A listings marketplace:
 
 **Supplier → listing → administrator approval → discovery → persisted inquiry.**
 
 Implemented assistance includes database-grounded concierge results, transparent preference ranking, editable supplier listing suggestions, scoped factual insights and local photo-quality/duplicate checks. The no-key paths work without a paid model. An optional external-provider adapter is implemented; a live provider call is unverified.
-
-
-[![Watch the narrated walkthrough](showcase/poster.jpg)](https://raw.githubusercontent.com/AymanLakhnati/lavishcars-ai-marketplace-showcase/main/showcase/LavishCars-Demo.mp4)
-
-**[Watch/download the 1080p narrated walkthrough](https://raw.githubusercontent.com/AymanLakhnati/lavishcars-ai-marketplace-showcase/main/showcase/LavishCars-Demo.mp4)** · [Transcript](showcase/TRANSCRIPT.md) · [Review guide](REVIEW_START_HERE.md)
 
 ## Run locally
 

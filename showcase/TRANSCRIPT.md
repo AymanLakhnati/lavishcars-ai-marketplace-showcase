@@ -2,34 +2,38 @@
 
 Synthetic English narration; verified captures and fresh local API evidence.
 
-## 00:00:00.000 — A marketplace built around trust
+## 00:00:00.000 — Every journey deserves an entrance.
 
-After the LavishCars technical assessment, Ayman Lakhnati developed this independent, AI-assisted marketplace concept. The objective is practical: help suppliers publish approved offers, help customers discover suitable vehicles, and turn interest into structured inquiries. This walkthrough combines verified prototype screens with fresh API demonstrations. All suppliers, vehicles and prices are synthetic. It is a listings marketplace, with no payment or confirmed reservation.
+An extraordinary car deserves an experience to match. This independent LavishCars concept brings a considered marketplace, clear rental rates, and direct supplier inquiries into one journey. Start with the product: a premium storefront designed for discovery, with dedicated workspaces for suppliers and administrators.
 
-## 00:00:34.508 — Describe the trip. Discover the drive.
+## 00:00:21.860 — Find the right drive.
 
-The showcase begins with a simple request: a luxury S U V in Dubai, for four days, below one thousand dirhams per day. The concierge extracts supported constraints, queries approved inventory, and returns up to three real database records with prices and explanations. It can ask for a missing destination while preserving earlier budget and passenger details. The database remains authoritative for price, supplier eligibility and visibility. The no-key interpretation is deterministic, so the demonstration works without a paid model. An optional external-provider adapter is implemented, but a real model call has not been verified.
+Explore by destination, brand, model, category and budget. Refine by passengers, transmission and features, then compare daily, weekly or monthly prices. Vehicle details bring photos, specifications and related offers together. A structured quote request records the customer’s interest against the correct supplier and vehicle. This is an inquiry marketplace; payment and confirmed reservations are outside the prototype.
 
-## 00:01:18.510 — A shortlist with reasons, not guesses
+## 00:00:50.347 — Your fleet. One workspace.
 
-The preference service makes the ranking explicit. Destination, budget, passenger capacity and required features constrain the eligible offers. A preferred category adds twenty ranking points, and an editorial occasion match adds ten. Ties use daily price, then listing identity. These are transparent rules, not invented match percentages or machine-learning accuracy claims. The customer can inspect the same vehicle record and request a quote. An inquiry is saved with its responsible listing, supplier and location before any notification attempt. It remains an inquiry, never a booking guarantee.
+The supplier dashboard keeps the operation in view: listing states, fleet management and incoming inquiries. Suppliers can create an offer, edit specifications and rental periods, order photos, and submit it for review. Profile, team membership and service areas have dedicated controls. Private records stay scoped to the authenticated supplier, while pause and archive actions support the listing lifecycle.
 
-## 00:02:01.436 — From rough notes to a reviewable offer
+## 00:01:16.569 — A higher standard, built in.
 
-For suppliers, the listing assistant turns rough vehicle notes into suggested fields, a concise description and completeness warnings. It recognizes existing catalog references and explicitly supplied facts. Unknown specifications remain for review. Suggestions must be previewed and applied to an editable draft. Applying them does not save, submit or publish a vehicle. The supplier still checks the details, uploads permitted images, saves the offer and submits it for administrator review. Supplier identity comes from authentication, and private listings and inquiries are scoped to that supplier.
+The administrator workspace controls supplier approval, listing moderation and publication. Reviewers can approve, reject with a reason, hide an offer or suspend a supplier. Catalog and location controls cover brands, models, categories and the market hierarchy. These actions are enforced in the backend. An ineligible offer disappears from public discovery and recommendations, while its business history remains available.
 
-## 00:02:43.368 — Publication is a business rule
+## 00:01:44.552 — From approval to a real inquiry.
 
-Administrator approval is a real boundary in the backend. A published offer also requires an approved, active supplier, an enabled market and no administrative hide. The same eligibility rule protects public search, vehicle details, recommendations and new inquiries. Supplier suspension removes public visibility without deleting business records. Material listing edits require renewed review. Customer inquiries are stored as structured C R M records, with controlled status updates. A notification failure cannot erase the saved request because the inquiry and outbox event commit together.
+Here is the complete business flow, verified through the API. A new supplier offer is private before approval. Once approved, the same offer becomes publicly accessible. A fictional customer request is saved, and the responsible supplier can retrieve it in their inbox. Inquiry and notification-outbox records commit together. The local WordPress bridge also displays eligible inventory, preserving a path toward the existing website.
 
-## 00:03:24.649 — Useful intelligence, backed by evidence
+## 00:02:13.177 — Describe the trip. Discover the drive.
 
-The insights service summarizes actual account data: listing states, inquiry states, category interest and the most-viewed vehicle details. View metrics count detail A P I requests, including repeats and automated demonstrations. They are descriptive measures, not unique-customer conversion or demand forecasts. Photo assistance checks resolution, brightness and edge detail, detects identical normalized uploads, and provides a documented cover-candidate score. These local image heuristics support supplier review. They do not verify that a photograph contains a vehicle, establish ownership, or infer exact specifications.
+Now, the intelligence. A visitor asks for a luxury SUV in Dubai, for four days, below one thousand dirhams a day. The concierge interprets supported constraints and returns up to three eligible database offers. In this verified response: a Cadillac Escalade at eight hundred fifty, a Range Rover Sport at nine hundred, and a G Class at nine hundred ninety dirhams per day. Prices, seats and explanations come from the catalog. Missing destinations can trigger a clarification without losing earlier preferences.
 
-## 00:04:08.860 — Respect WordPress. Separate the authority.
+## 00:02:49.258 — Less friction. More control.
 
-The architecture respects LavishCars' existing WordPress investment. WordPress remains the intended marketing, content and S E O layer. Fast A P I and PostgreSQL own suppliers, normalized memberships, service areas, offers, approvals and inquiries. Next J S demonstrates the storefront and portals. A local WordPress bridge has been tested for catalog rendering and supplier suspension visibility. Verification includes twenty-two backend tests, four main browser scenarios, seven extended interface checks and five proxy checks. The build and lint pass locally. Remote continuous integration has a startup failure, and public deployment is still blocked by the hosting account setup.
+Preference recommendations keep mandatory constraints intact, with transparent category and occasion weights. Suppliers get a second practical assistant: rough notes become suggested vehicle fields, a description and completeness warnings. Preview, apply, edit, save and submit remain distinct actions. Suggestions never publish a car automatically. The no-key demonstration uses deterministic interpretation; an optional external-model adapter is implemented, but a live provider call remains unverified.
 
-## 00:04:58.950 — Business understanding. Working evidence.
+## 00:03:25.347 — See the activity. Improve the offer.
 
-The result is a reviewable demonstration of the complete supplier-to-inquiry workflow, with grounded assistance where it helps. The repository includes the architecture, requirement audit, tests and an explicit production roadmap. The next conversation is about scope, trade-offs and how this foundation should fit LavishCars' priorities. This is an unofficial concept developed with AI assistance. The voice narration is synthetic.
+The remaining assistance supports daily operations. Scoped insights summarize recorded listings, inquiries, category interest and detail-page activity. Photo assistance checks resolution, brightness and edge detail, flags normalized duplicate uploads, and suggests cover candidates. These are descriptive summaries and image-quality heuristics. View counts include repeated API requests, and photo checks do not verify vehicle identity or ownership.
+
+## 00:03:54.823 — Built to explain. Ready to inspect.
+
+Behind the experience are Next J S, Fast A P I and PostgreSQL, with a separate WordPress bridge. Local verification includes twenty-two backend tests, four main browser scenarios, seven additional interface checks and five proxy checks. The public review page brings the film, source code and technical roadmap together. Prepared by Ayman Lakhnati after the technical assessment: an independent concept, developed with AI assistance. Synthetic inventory, edited prototype captures, and neural voice narration. I would welcome the opportunity to discuss the decisions behind it.

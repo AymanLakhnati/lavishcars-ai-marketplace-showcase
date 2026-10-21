@@ -1,20 +1,21 @@
-# Employer email — draft, not sent
+# Employer email — ready to copy, not sent
 
-**Subject:** Following my assessment: a working LavishCars marketplace concept
+Subject: Following my assessment — a LavishCars marketplace prototype
 
 Hello LavishCars team,
 
-Thank you for the technical assessment and the opportunity to learn more about your marketplace plans. Afterwards, I developed an independent, AI-assisted prototype to turn the Type A workflow into something concrete: supplier submission, LavishCars approval, customer discovery and a saved inquiry.
+Thank you again for the technical assessment. I wanted to take the exercise further and show how I approach a product beyond the assessment itself, so I built an independent LavishCars marketplace concept.
 
-I have attached a short narrated walkthrough and a source-code bundle. The demo highlights a concierge that matches approved database inventory with prices and explanations, along with supplier listing assistance, transparent preference ranking, factual insights and photo-quality checks.
+Website and narrated demo: https://lavishcars-ayman-showcase.jocund-larch-4775.chatgpt.site
+Public source code: https://github.com/AymanLakhnati/lavishcars-ai-marketplace-showcase
 
-The source includes the application, tests, setup instructions and a WordPress integration bridge tested locally. This is a local prototype with synthetic data; the accompanying review guide records what was verified and the remaining production work.
+The 4-minute-35-second walkthrough starts with the marketplace, supplier and administrator dashboards, and the approval-to-inquiry workflow. It then covers the concierge, preference recommendations, supplier listing assistant, factual insights and photo-quality assistance.
 
-I would welcome a 15-minute discussion of the design decisions—particularly supplier permissions, publication rules and integration with your existing WordPress site—and how I would adapt the foundation to your priorities.
+The repository includes the implementation, tests, reproducible setup and a WordPress integration bridge tested locally. The review page distinguishes the working local prototype from the remaining production work; inventory is synthetic, and development was AI-assisted.
+
+I would welcome a short technical discussion about the decisions behind the prototype, particularly supplier permissions, publication rules and how the architecture could fit your existing WordPress site.
+
+Thank you for taking a look.
 
 Best regards,
 Ayman Lakhnati
-
----
-
-Attach the generated email-size MP4 and source ZIP. If your mail service rejects the combined size, send the video through a sharing service you control and replace the attachment sentence with its verified link. The repository is private unless a separate sanitized public showcase is explicitly approved. Do not include the confidential assessment PDF in the email or public source.

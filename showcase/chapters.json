@@ -1,86 +1,92 @@
 [
   {
-    "id": "01-introduction",
-    "title": "A marketplace built around trust",
+    "id": "01-marketplace",
+    "title": "Every journey deserves an entrance.",
     "start": 0.0,
-    "duration": 34.508,
+    "duration": 21.86,
     "shots": [
-      "01-introduction-1.png",
-      "01-introduction-2.png"
+      "01-marketplace-1.png",
+      "01-marketplace-2.png"
     ]
   },
   {
-    "id": "02-concierge",
+    "id": "02-discovery",
+    "title": "Find the right drive.",
+    "start": 21.86,
+    "duration": 28.487,
+    "shots": [
+      "02-discovery-1.png",
+      "02-discovery-2.png"
+    ]
+  },
+  {
+    "id": "03-supplier",
+    "title": "Your fleet. One workspace.",
+    "start": 50.347,
+    "duration": 26.222,
+    "shots": [
+      "03-supplier-1.png",
+      "03-supplier-2.png"
+    ]
+  },
+  {
+    "id": "04-admin",
+    "title": "A higher standard, built in.",
+    "start": 76.569,
+    "duration": 27.983,
+    "shots": [
+      "04-admin-1.png",
+      "04-admin-2.png"
+    ]
+  },
+  {
+    "id": "05-workflow",
+    "title": "From approval to a real inquiry.",
+    "start": 104.552,
+    "duration": 28.625,
+    "shots": [
+      "05-workflow-1.png",
+      "05-workflow-2.png"
+    ]
+  },
+  {
+    "id": "06-concierge",
     "title": "Describe the trip. Discover the drive.",
-    "start": 34.508,
-    "duration": 44.001,
+    "start": 133.177,
+    "duration": 36.081,
     "shots": [
-      "02-concierge-1.png",
-      "02-concierge-2.png",
-      "02-concierge-3.png"
+      "06-concierge-1.png",
+      "06-concierge-2.png"
     ]
   },
   {
-    "id": "03-preferences",
-    "title": "A shortlist with reasons, not guesses",
-    "start": 78.51,
-    "duration": 42.926,
+    "id": "07-assistance",
+    "title": "Less friction. More control.",
+    "start": 169.258,
+    "duration": 36.089,
     "shots": [
-      "03-preferences-1.png",
-      "03-preferences-2.png"
+      "07-assistance-1.png",
+      "07-assistance-2.png"
     ]
   },
   {
-    "id": "04-supplier",
-    "title": "From rough notes to a reviewable offer",
-    "start": 121.436,
-    "duration": 41.932,
+    "id": "08-insights",
+    "title": "See the activity. Improve the offer.",
+    "start": 205.347,
+    "duration": 29.476,
     "shots": [
-      "04-supplier-1.png",
-      "04-supplier-2.png",
-      "04-supplier-3.png"
+      "08-insights-1.png",
+      "08-insights-2.png"
     ]
   },
   {
-    "id": "05-approval",
-    "title": "Publication is a business rule",
-    "start": 163.368,
-    "duration": 41.281,
+    "id": "09-engineering",
+    "title": "Built to explain. Ready to inspect.",
+    "start": 234.823,
+    "duration": 40.404,
     "shots": [
-      "05-approval-1.png",
-      "05-approval-2.png"
-    ]
-  },
-  {
-    "id": "06-insights",
-    "title": "Useful intelligence, backed by evidence",
-    "start": 204.649,
-    "duration": 44.211,
-    "shots": [
-      "06-insights-1.png",
-      "06-insights-2.png",
-      "06-insights-3.png"
-    ]
-  },
-  {
-    "id": "07-architecture",
-    "title": "Respect WordPress. Separate the authority.",
-    "start": 248.86,
-    "duration": 50.09,
-    "shots": [
-      "07-architecture-1.png",
-      "07-architecture-2.png",
-      "07-architecture-3.png"
-    ]
-  },
-  {
-    "id": "08-closing",
-    "title": "Business understanding. Working evidence.",
-    "start": 298.95,
-    "duration": 29.664,
-    "shots": [
-      "08-closing-1.png",
-      "08-closing-2.png"
+      "09-engineering-1.png",
+      "09-engineering-2.png"
     ]
   }
 ]

@@ -65,6 +65,6 @@ See `IMPLEMENTATION_STATUS.md` for exact checks and remaining scope. In particul
 the WordPress plugin has been tested locally, including suspension visibility. Production hosting, real notification delivery and live provider verification remain outstanding. Taxonomy, service areas, team accounts and normalized associations are implemented. The homepage uses labeled AI-generated concept artwork;
 vehicle cards without supplier photos use original illustrations.
 
-This is the sanitized public review distribution. Confidential assessment attachments are omitted.
+The repository is private because it includes the original confidential assessment.
 The owner can grant reviewer access or share the source archive directly. A private
 GitHub URL requires access; localhost is only reachable on the machine running it.

@@ -2,9 +2,11 @@
 
 Prepared by **Ayman Lakhnati** after the technical assessment. Independent concept, developed with AI assistance. All business records and rates are synthetic.
 
+**[Review website](https://lavishcars-ayman-showcase.jocund-larch-4775.chatgpt.site)** · **[Public code](https://github.com/AymanLakhnati/lavishcars-ai-marketplace-showcase)**
+
 ## Review in five minutes
 
-1. Watch the narrated MP4 supplied alongside this source bundle. It combines verified UI captures, explanatory graphics and fresh local API checks. Captured UI states are labeled; this is an edited evidence walkthrough, not a continuous live recording. Narration is synthetic.
+1. Watch the [4:35 product film](https://lavishcars-ayman-showcase.jocund-larch-4775.chatgpt.site/#walkthrough). It combines verified UI captures, explanatory graphics and fresh local API checks. Captured UI states are labeled; this is an edited evidence walkthrough, not a continuous live recording. Narration is synthetic.
 2. Read the root README for reproducible setup. The essential workflow is supplier → draft → review → public offer → persisted inquiry.
 3. Inspect `services/api/app/catalog.py` for shared public eligibility, `security.py` for authentication/ownership, and `main.py` for lifecycle and inquiry persistence.
 4. Inspect `concierge.py`, `recommendations.py`, `provider.py` and `image_quality.py` for assistance and its limits. The no-key paths work; a real external-model call remains unverified.
@@ -18,7 +20,7 @@ Prepared by **Ayman Lakhnati** after the technical assessment. Independent conce
 - A real local WordPress installation rendered API catalog offers and respected supplier suspension/restoration.
 - Fresh recording evidence verifies concierge records, preference scoring, supplier suggestions, image warnings/duplicates, actual insights and a new approval-to-inquiry path.
 
-The latest verification report states the scope and remaining limitations. Remote CI has failed before jobs start; public deployment is not verified. There are no payments, payouts, reservation guarantees or real supplier notifications.
+The latest verification report states the scope and remaining limitations. Remote CI has failed before jobs start; the public review presentation is deployed, while full application hosting remains unverified. There are no payments, payouts, reservation guarantees or real supplier notifications.
 
 ## Source layout
 
