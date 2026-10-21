@@ -716,3 +716,7 @@ footer > a {
     aspect-ratio: 4/3;
   }
 }
+
+.video-meta > div {
+  flex-wrap: wrap;
+}

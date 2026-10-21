@@ -1,8 +1,36 @@
 const video = document.querySelector("#demo");
 const buttons = [...document.querySelectorAll("[data-time]")];
 const status = document.querySelector("#play-status");
+let preparedVideo;
+async function prepareChapterPlayback() {
+  if (!/^https?:$/.test(location.protocol)) return;
+  if (!preparedVideo)
+    preparedVideo = (async () => {
+      status.textContent = "Preparing the video for chapter navigation…";
+      const response = await fetch("assets/LavishCars-Demo.mp4");
+      if (!response.ok) throw new Error("Video download unavailable");
+      const blob = await response.blob();
+      if (!blob.size) throw new Error("Empty video response");
+      const source = URL.createObjectURL(blob);
+      await new Promise((resolve, reject) => {
+        video.addEventListener("loadedmetadata", resolve, { once: true });
+        video.addEventListener("error", reject, { once: true });
+        video.src = source;
+        video.load();
+      });
+      status.textContent = "Video ready. Chapter selected.";
+    })();
+  await preparedVideo;
+}
 for (const button of buttons) {
   button.addEventListener("click", async () => {
+    try {
+      await prepareChapterPlayback();
+    } catch {
+      status.textContent =
+        "Chapter download unavailable. Use Play or the GitHub video fallback.";
+    }
+
     if (video.readyState < 1) {
       video.load();
       await new Promise((resolve, reject) => {

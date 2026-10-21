@@ -17,3 +17,5 @@ Use the API environment to install optional media tooling: `pip install kokoro-o
 Run `scripts/demo/narrate-neural.py`, then `scripts/demo/render.py`, then `scripts/demo/package.py`. Windows fonts are used by the renderer. `verify-evidence.py` and `capture-proof.mjs` additionally require the local application/database and WordPress; they must not be run against production data. The legacy SAPI script remains available but was not used for this revision.
 
 The source distribution excludes confidential assessment attachments, credentials, runtime state and Git history. Captions are approximately timed from narration length; they are not a word-aligned transcription.
+
+The hosted automation check loaded the page and video metadata but exposed unreliable native chapter seeking. Chapter selection now prepares a complete local video blob before seeking, verified with an HTTP fixture returning full-body media responses. The host subsequently blocked automated HTTP requests with Cloudflare 1010. Native Sites reports successful public deployment; complete automated end-to-end hosted playback is not claimed. A public GitHub video fallback is provided.

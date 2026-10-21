@@ -1,9 +1,13 @@
 import assert from "node:assert/strict";
 import { chromium } from "@playwright/test";
 import { resolve } from "node:path";
+import { readFile } from "node:fs/promises";
+import { extname } from "node:path";
 import { pathToFileURL } from "node:url";
 const source =
-  process.env.SHOWCASE_URL ||
+  (process.env.SHOWCASE_HTTP_FIXTURE
+    ? "https://showcase.test/index.html"
+    : process.env.SHOWCASE_URL) ||
   pathToFileURL(resolve("review-site/dist/index.html")).href;
 const browser = await chromium.launch({ headless: true });
 const errors = [];
@@ -12,6 +16,26 @@ try {
     viewport: { width: 1440, height: 1000 },
   });
   page.on("pageerror", (error) => errors.push(error.message));
+  if (process.env.SHOWCASE_HTTP_FIXTURE)
+    await page.route("https://showcase.test/**", async (route) => {
+      const path = new URL(route.request().url()).pathname;
+      const contentTypes = {
+        ".html": "text/html",
+        ".js": "text/javascript",
+        ".css": "text/css",
+        ".mp4": "video/mp4",
+        ".vtt": "text/vtt",
+        ".png": "image/png",
+        ".jpg": "image/jpeg",
+        ".webp": "image/webp",
+      };
+      const body = await readFile(resolve("review-site/dist", "." + path));
+      await route.fulfill({
+        status: 200,
+        contentType: contentTypes[extname(path)] || "application/octet-stream",
+        body,
+      });
+    });
   await page.goto(source, { waitUntil: "load" });
   await page
     .getByRole("heading", { name: "A marketplace. A working foundation." })
